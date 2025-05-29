@@ -1,0 +1,35 @@
+# Configuración de ItemManager
+# Autor: Mtyn
+
+# Activar/desactivar modo debug
+debug: false
+
+# Configuración de items
+items:
+  # Ejemplo de item personalizado
+  menu_principal:
+    material: COMPASS
+    name: "#00FF00&lMenú Principal"
+    lore:
+      - "#FFFFFFHaz click derecho para abrir"
+      - "#FFFFFFel menú principal"
+    glow: true
+    giveOnJoin: true
+    slot: 0
+    click_actions:
+      right_click:
+        commands:
+          - "[MESSAGE] &aAbriendo menú..."
+          - "[CONSOLE] menu %player%"
+        permission: "itemmanager.menu"
+
+# Configuración de mensajes
+messages:
+  prefix: "&8[&aItemManager&8] &r"
+  no_permission: "&cNo tienes permiso para usar este comando."
+  item_not_found: "&cItem no encontrado: %id%"
+  item_given: "&aHas recibido el item: %id%"
+  item_given_to: "&aHas dado el item %id% a %player%"
+  config_reloaded: "&aConfiguración recargada correctamente."
+  debug_enabled: "&aModo debug activado"
+  debug_disabled: "&cModo debug desactivado"

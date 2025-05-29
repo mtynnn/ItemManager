@@ -1,0 +1,38 @@
+name: ItemManager
+version: "${project.version}"
+main: com.mcsv.itemmanager.ItemManagerPlugin
+api-version: "1.21"
+authors: [Mtyn]
+description: Un potente gestor de items personalizados para servidores de Minecraft
+website: https://github.com/mcsv/ItemManager
+
+commands:
+  itemmanager:
+    description: Comando principal de ItemManager
+    aliases: [im]
+    usage: /itemmanager [reload|giveitem|debug]
+    permission: itemmanager.admin
+  giveitem:
+    description: Da un item personalizado a un jugador
+    usage: /giveitem <jugador> <id>
+    permission: itemmanager.giveitem
+
+permissions:
+  itemmanager.admin:
+    description: Acceso a todos los comandos
+    default: op
+  itemmanager.reload:
+    description: Permite recargar la configuración
+    default: op
+  itemmanager.giveitem:
+    description: Permite dar items personalizados
+    default: op
+  itemmanager.menu:
+    description: Permite usar el menú principal
+    default: true
+  itemmanager.kit:
+    description: Permite reclamar el kit de bienvenida
+    default: true
+  itemmanager.debug:
+    description: Permite activar/desactivar el modo debug
+    default: op

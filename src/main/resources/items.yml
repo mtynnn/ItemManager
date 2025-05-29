@@ -1,0 +1,101 @@
+# Items interactivos del servidor
+items:
+  menu_principal:
+    material: COMPASS
+    name: "&b&lMenú Principal"
+    lore:
+      - "&7"
+      - "&7Haz click derecho para abrir"
+      - "&7el menú principal del servidor"
+      - ""
+      - "&e► &7Comandos disponibles"
+      - "&e► &7Tienda del servidor"
+      - "&e► &7Información del servidor"
+      - ""
+      - "&a¡Click para abrir!"
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    nbt:
+      custom_model_data: 1001
+    glow: true
+    cantidad: 1
+    click_actions:
+      right_click:
+        commands:
+          - "[MESSAGE] &aAbriendo menú principal..."
+          - "[CONSOLE] menu %player%"
+        permission: "serverutils.menu"
+
+  kit_bienvenida:
+    material: CHEST
+    name: "&a&lKit de Bienvenida"
+    lore:
+      - "&7"
+      - "&7Haz click derecho para reclamar"
+      - "&7tu kit de bienvenida"
+      - ""
+      - "&e► &7Espada mágica"
+      - "&e► &7Manzana dorada"
+      - "&e► &7Menú principal"
+      - ""
+      - "&a¡Click para reclamar!"
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    nbt:
+      custom_model_data: 1002
+    glow: true
+    cantidad: 1
+    click_actions:
+      right_click:
+        commands:
+          - "[MESSAGE] &aReclamando kit de bienvenida..."
+          - "[CONSOLE] kit bienvenida %player%"
+        permission: "serverutils.kit"
+
+  espada_magica:
+    material: DIAMOND_SWORD
+    name: "&b&lEspada Mágica"
+    lore:
+      - "&7"
+      - "&7Una espada mágica que otorga"
+      - "&7poderes especiales a su portador"
+      - ""
+      - "&e► &7Daño: &c+7"
+      - "&e► &7Velocidad: &a+20%"
+      - ""
+      - "&d¡Item exclusivo!"
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    nbt:
+      custom_model_data: 1003
+    glow: true
+    cantidad: 1
+    enchantments:
+      DAMAGE_ALL: 5
+      DURABILITY: 3
+      FIRE_ASPECT: 2
+
+  ejemplo_manzana:
+    material: GOLDEN_APPLE
+    name: "&6&lManzana Dorada"
+    lore:
+      - "&7"
+      - "&7Una manzana dorada especial"
+      - "&7que otorga efectos mágicos"
+      - ""
+      - "&e► &7Regeneración: &a+4 corazones"
+      - "&e► &7Absorción: &a+2 corazones"
+      - ""
+      - "&d¡Item exclusivo!"
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+    nbt:
+      custom_model_data: 1004
+    glow: true
+    cantidad: 5
+    enchantments:
+      DURABILITY: 1

@@ -1,0 +1,33 @@
+# Archivos compilados
+target/
+*.class
+
+# Archivos de IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos de configuración del servidor
+server/
+plugins/
+*.yml
+!src/main/resources/*.yml
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos de Maven
+.mvn/
+mvnw
+mvnw.cmd 
